@@ -1,1 +1,56 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    body, html {
+      height: 100%;
+      font-family: sans-serif;
+      overflow: hidden;
+    }
+
+    .tela {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      transition: transform 1s ease-in-out;
+    }
+
+    .tela-inicial {
+      background: #e9e9f0; /* tom claro não branco */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #btn-iniciar {
+      padding: 20px 40px;
+      font-size: 1.5rem;
+      border: none;
+      border-radius: 10px;
+      background-color: #5a67d8;
+      color: white;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .tela-nome {
+      background: #f4f4fa;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transform: translateY(100%);
+    }
+
+    .tela-nome h2 {
+      margin-bottom: 20px;
+    }
+
+    .tela-nome input {
+      padding: 10px;
+      font-size: 1.2rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }

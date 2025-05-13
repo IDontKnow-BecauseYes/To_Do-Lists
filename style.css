@@ -1,4 +1,4 @@
-  * {
+* {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -22,6 +22,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      position: relative;
+      z-index: 2;
     }
 
     #btn-iniciar {
@@ -33,7 +35,24 @@
       color: white;
       cursor: pointer;
       transition: transform 0.2s;
+      position: relative;
+      z-index: 3;
     }
+
+    .rachadura {
+      position: absolute;
+      background-image: url('https://i.imgur.com/TKp2gS9.png');
+      background-size: cover;
+      width: 100px;
+      height: 100px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s;
+    }
+
+    .rachadura.nivel1.show { opacity: 0.3; }
+    .rachadura.nivel2.show { opacity: 0.6; }
+    .rachadura.nivel3.show { opacity: 1; }
 
     .tela-nome {
       background: #f4f4fa;
